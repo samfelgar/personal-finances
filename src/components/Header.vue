@@ -1,7 +1,7 @@
 <template>
   <div class="bg-teal-600 py-2 flex flex-col sm:flex-row sm:justify-between w-full gap-3 sm:gap-0">
-    <router-link to="/">
-      <Logo class="text-white self-center sm:self-auto sm:ml-6" />
+    <router-link to="/" class="self-center">
+      <Logo class="text-white sm:self-auto sm:ml-6" />
     </router-link>
     <div class="flex flex-row gap-2 items-center justify-between sm:justify-center w-full sm:w-auto px-2">
       <Datepicker monthPicker v-model="referenceDate" @update:modelValue="handleDateChange" auto-apply />
